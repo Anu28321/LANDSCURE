@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover land with confidence. LandSure brings property discovery, document checks, and purchase requests together in one secure place."
+    />
+    <meta name="theme-color" content="#f8f9f5" />
+    <title>LandSure — Find land. Move forward with confidence.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="LandSure home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none">
+            <path d="M20 3.5c-7 0-12.3 5.4-12.3 12.1 0 8 12.3 20.9 12.3 20.9s12.3-12.9 12.3-20.9C32.3 8.9 27 3.5 20 3.5Z" fill="currentColor"/>
+            <path d="M20 11.1 13 18h4.2v6.1h5.6V18H27l-7-6.9Z" fill="#fff"/>
+            <path d="M5.2 28.8c5.3.2 9 1.8 12.5 5.1M34.8 28.8c-5.3.2-9 1.8-12.5 5.1" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand-word">land<span>sure</span></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#properties">Explore land</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#verification">Verification</a>
+        <a href="#for-owners">For owners</a>
+      </nav>
+      <div class="header-actions">
+        <button class="button button-quiet sign-in-button" type="button" data-open-modal="signin">Sign in</button>
+        <a class="button button-primary header-cta" href="#properties">Find a property <span aria-hidden="true">↗</span></a>
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section-wrap" id="home">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> A clearer way to buy land</div>
+          <h1>Find your place.<br /><span>Know what you’re buying.</span></h1>
+          <p class="hero-description">
+            Discover land that fits your plans, review property documents, and take your next step with more confidence.
+          </p>
+          <form class="search-panel" id="hero-search">
+            <label class="search-field search-location">
+              <span class="field-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              </span>
+              <span class="field-content">
+                <span class="field-label">Location</span>
+                <input id="hero-location" name="location" placeholder="City, district or region" autocomplete="off" />
+              </span>
+            </label>
+            <label class="search-field">
+              <span class="field-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 9h8M8 13h5M8 17h3"/></svg>
+              </span>
+              <span class="field-content">
+                <span class="field-label">Land type</span>
+                <select id="hero-type" name="type">
+                  <option value="">Any land type</option>
+                  <option value="Residential">Residential</option>
+                  <option value="Agricultural">Agricultural</option>
+                  <option value="Commercial">Commercial</option>
+                </select>
+              </span>
+            </label>
+            <button class="button button-primary search-button" type="submit">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg>
+              Search land
+            </button>
+          </form>
+          <div class="hero-note">
+            <span class="avatar-stack" aria-hidden="true"><i>R</i><i>M</i><i>A</i></span>
+            <span><strong>Thoughtful decisions start here.</strong> Explore listings with clearer details.</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-photo" role="img" aria-label="Green fields and farmland under a clear sky"></div>
+          <div class="photo-shade"></div>
+          <div class="map-outline map-outline-one"></div>
+          <div class="map-outline map-outline-two"></div>
+          <div class="map-pin"><span></span></div>
+          <div class="photo-caption">
+            <span class="caption-kicker">A place to put down roots</span>
+            <strong>Room to grow, in every sense.</strong>
+            <span class="caption-location"><span aria-hidden="true">⌖</span> Coimbatore, Tamil Nadu</span>
+          </div>
+          <div class="verified-float"><span class="verified-icon">✓</span><span><strong>Documents reviewed</strong><small>More clarity, from the start</small></span></div>
+          <div class="hero-stat"><span class="stat-icon" aria-hidden="true">⌖</span><span><strong>Thoughtful search</strong><small>Built around what matters to you</small></span></div>
+        </div>
+      </section>
+
+      <section class="trust-strip" aria-label="LandSure platform principles">
+        <div class="trust-inner">
+          <span>One place to make your next move</span>
+          <div><b class="trust-check">✓</b> Clear property details</div>
+          <div><b class="trust-check">✓</b> Document review tools</div>
+          <div><b class="trust-check">✓</b> A transparent request flow</div>
+        </div>
+      </section>
+
+      <section class="section section-wrap properties-section" id="properties">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">A good place to begin</span>
+            <h2>Land worth a closer look</h2>
+            <p>Explore a few sample listings. Each one puts the important details up front.</p>
+          </div>
+          <a class="text-link" href="#properties" id="view-all-link">View all properties <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="listing-toolbar">
+          <div class="filter-pills" role="group" aria-label="Filter properties">
+            <button class="filter-pill is-active" type="button" data-filter="All">All properties</button>
+            <button class="filter-pill" type="button" data-filter="Residential">Residential</button>
+            <button class="filter-pill" type="button" data-filter="Agricultural">Agricultural</button>
+            <button class="filter-pill" type="button" data-filter="Commercial">Commercial</button>
+          </div>
+          <label class="sort-control">Sort by
+            <select id="sort-listings" aria-label="Sort listings">
+              <option value="featured">Recommended</option>
+              <option value="price-low">Price: low to high</option>
+              <option value="price-high">Price: high to low</option>
+              <option value="area-large">Area: largest first</option>
+            </select>
+          </label>
+        </div>
+        <div class="property-grid" id="property-grid" aria-live="polite"></div>
+        <p class="empty-state" id="empty-state" hidden>No properties match those filters. Try a different location or land type.</p>
+        <p class="demo-note">Illustrative listings for the LandSure design preview.</p>
+      </section>
+
+      <section class="section process-section" id="how-it-works">
+        <div class="section-wrap">
+          <div class="section-heading section-heading-centered">
+            <div>
+              <span class="eyebrow">The process, made clearer</span>
+              <h2>From first search to next step</h2>
+              <p>A simple path that keeps the details in view at every stage.</p>
+            </div>
+          </div>
+          <div class="process-grid">
+            <article class="process-card">
+              <div class="process-number">01 <span>⌕</span></div>
+              <h3>Find a fit</h3>
+              <p>Search by place, land type, size, and budget to bring the right listings into view.</p>
+            </article>
+            <article class="process-card">
+              <div class="process-number">02 <span>▤</span></div>
+              <h3>Review the details</h3>
+              <p>See listing information and the documents provided by the property owner.</p>
+            </article>
+            <article class="process-card">
+              <div class="process-number">03 <span>✓</span></div>
+              <h3>Check and clarify</h3>
+              <p>Use assisted document checks to spot missing or inconsistent information.</p>
+            </article>
+            <article class="process-card">
+              <div class="process-number">04 <span>↗</span></div>
+              <h3>Send a request</h3>
+              <p>Start a conversation with the owner and follow the request as it progresses.</p>
+            </article>
+          </div>
+          <div class="process-footnote"><span>i</span> LandSure helps organize information. Always consult the relevant local authorities and qualified professionals before a land purchase.</div>
+        </div>
+      </section>
+
+      <section class="section section-wrap verification-section" id="verification">
+        <div class="verification-copy">
+          <span class="eyebrow"><span class="eyebrow-dot"></span> Documents, in better order</span>
+          <h2>Clarity in the paperwork.<br /><span>Confidence in your next step.</span></h2>
+          <p>Upload a land document to see how an assisted review can surface key fields and flag details that may need a closer look.</p>
+          <ul class="benefit-list">
+            <li><span>✓</span> Extract key information with OCR</li>
+            <li><span>✓</span> Spot missing or mismatched details</li>
+            <li><span>✓</span> Keep original documents attached</li>
+          </ul>
+          <div class="disclaimer"><span aria-hidden="true">ⓘ</span> AI can assist with document review, but it is not legal advice or an official title search.</div>
+        </div>
+        <div class="verification-card">
+          <div class="verification-card-head">
+            <div><span class="mini-shield">✓</span><span><strong>Document review</strong><small>Assisted checks for your records</small></span></div>
+            <span class="secure-label"><span></span> Private demo</span>
+          </div>
+          <label class="upload-zone" id="upload-zone" for="document-upload">
+            <input id="document-upload" type="file" accept=".pdf,.png,.jpg,.jpeg" />
+            <span class="upload-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V4m0 0L7.5 8.5M12 4l4.5 4.5"/><path d="M5 14v4.5A1.5 1.5 0 0 0 6.5 20h11a1.5 1.5 0 0 0 1.5-1.5V14"/></svg>
+            </span>
+            <strong id="upload-title">Drop a document here</strong>
+            <span id="upload-description">or <span class="browse-text">browse files</span> · PDF, JPG, PNG</span>
+            <span class="upload-limit">Maximum file size: 10 MB</span>
+          </label>
+          <div class="review-preview">
+            <div class="preview-title">What an assisted review can help with</div>
+            <div class="review-row"><span class="review-document">▤</span><span><strong>Owner name</strong><small>Compare details across records</small></span><span class="review-status">Field check</span></div>
+            <div class="review-row"><span class="review-document">⌖</span><span><strong>Survey or plot number</strong><small>Find key identifying information</small></span><span class="review-status">Field check</span></div>
+            <div class="review-row"><span class="review-document">▧</span><span><strong>Missing information</strong><small>Flag items for human review</small></span><span class="review-status review-status-neutral">Review</span></div>
+          </div>
+          <p class="verification-feedback" id="verification-feedback" role="status"></p>
+        </div>
+      </section>
+
+      <section class="roles-section" id="for-owners">
+        <div class="section-wrap roles-inner">
+          <div class="roles-heading">
+            <span class="eyebrow">Built for every side of the process</span>
+            <h2>Better together,<br />from search to sale.</h2>
+            <p>LandSure brings buyers and land owners into one more organized conversation.</p>
+            <a class="button button-primary" href="#properties">Explore the platform <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="role-cards">
+            <article class="role-card buyer-card">
+              <div class="role-icon" aria-hidden="true">⌕</div>
+              <span class="role-kicker">For buyers</span>
+              <h3>Make an informed start.</h3>
+              <ul><li>Find land by location and needs</li><li>Review details in one place</li><li>Send and track purchase requests</li></ul>
+              <span class="role-arrow" aria-hidden="true">↗</span>
+            </article>
+            <article class="role-card owner-card">
+              <div class="role-icon" aria-hidden="true">⌂</div>
+              <span class="role-kicker">For land owners</span>
+              <h3>Share your property clearly.</h3>
+              <ul><li>Create a detailed property listing</li><li>Organize documents for review</li><li>Respond to buyer requests</li></ul>
+              <span class="role-arrow" aria-hidden="true">↗</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="security-section section-wrap" aria-labelledby="security-title">
+        <div class="security-heading">
+          <span class="eyebrow">Trust is built into the process</span>
+          <h2 id="security-title">A careful approach to sensitive details.</h2>
+          <p>Property records deserve thoughtful handling. LandSure is designed around clear access, secure workflows, and human review.</p>
+        </div>
+        <div class="security-grid">
+          <article class="security-item">
+            <span class="security-icon" aria-hidden="true">♙</span>
+            <h3>Verified access</h3>
+            <p>Keep buyer, owner, and administrator actions distinct.</p>
+          </article>
+          <article class="security-item">
+            <span class="security-icon" aria-hidden="true">▤</span>
+            <h3>Protected documents</h3>
+            <p>Make privacy and careful document handling a priority.</p>
+          </article>
+          <article class="security-item">
+            <span class="security-icon" aria-hidden="true">◷</span>
+            <h3>Reviewable changes</h3>
+            <p>Keep important updates visible for follow-up and review.</p>
+          </article>
+          <article class="security-item">
+            <span class="security-icon" aria-hidden="true">✓</span>
+            <h3>People stay in control</h3>
+            <p>AI can assist with checks; people and authorities make decisions.</p>
+          </article>
+        </div>
+        <div class="security-note"><span aria-hidden="true">✳</span><strong>AI is an assistant, not the final authority.</strong> LandSure is a discovery and document-organization tool, not a substitute for legal advice or official verification.</div>
+      </section>
+
+      <section class="section section-wrap closing-cta">
+        <div class="cta-ornament" aria-hidden="true"></div>
+        <span class="eyebrow"><span class="eyebrow-dot"></span> Your next chapter starts somewhere</span>
+        <h2>Start with a clearer view.</h2>
+        <p>Explore land, understand the details, and take the next step when you’re ready.</p>
+        <a class="button button-primary" href="#properties">Explore land listings <span aria-hidden="true">↗</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-wrap footer-inner">
+        <div class="footer-main">
+          <a class="brand footer-brand" href="#home">
+            <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M20 3.5c-7 0-12.3 5.4-12.3 12.1 0 8 12.3 20.9 12.3 20.9s12.3-12.9 12.3-20.9C32.3 8.9 27 3.5 20 3.5Z" fill="currentColor"/><path d="M20 11.1 13 18h4.2v6.1h5.6V18H27l-7-6.9Z" fill="#fff"/><path d="M5.2 28.8c5.3.2 9 1.8 12.5 5.1M34.8 28.8c-5.3.2-9 1.8-12.5 5.1" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg></span>
+            <span class="brand-word">land<span>sure</span></span>
+          </a>
+          <p>Find land. Understand the details.<br />Move forward with confidence.</p>
+        </div>
+        <div class="footer-links"><strong>Explore</strong><a href="#properties">Find land</a><a href="#how-it-works">How it works</a><a href="#verification">Document review</a></div>
+        <div class="footer-links"><strong>For everyone</strong><a href="#for-owners">Land owners</a><a href="#properties">Buyers</a><button type="button" class="footer-sign-in" data-open-modal="signin">Sign in</button></div>
+        <div class="footer-note">A thoughtful first step<br /><span>© <span id="current-year"></span> LandSure. Design preview.</span></div>
+      </div>
+    </footer>
+
+    <dialog class="app-modal" id="property-modal" aria-labelledby="property-modal-title">
+      <button class="modal-close" type="button" aria-label="Close dialog">×</button>
+      <div id="property-modal-content"></div>
+    </dialog>
+    <dialog class="app-modal compact-modal" id="signin-modal" aria-labelledby="signin-title">
+      <button class="modal-close" type="button" aria-label="Close dialog">×</button>
+      <span class="eyebrow">Welcome to LandSure</span>
+      <h2 id="signin-title">A clearer way to get started.</h2>
+      <p class="modal-description">Sign-in is not connected in this design preview. Choose how you’d like to explore.</p>
+      <a class="button button-primary modal-wide-button" href="#properties">Browse land listings <span aria-hidden="true">↗</span></a>
+      <a class="button button-outline modal-wide-button" href="#for-owners">I’m a land owner <span aria-hidden="true">↗</span></a>
+      <p class="modal-small-note">This preview does not create an account or collect personal information.</p>
+    </dialog>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
